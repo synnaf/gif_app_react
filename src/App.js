@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Random from './components/Random_V1'; 
+import Tag from './components/Tag_V1'; 
+
+import './App.scss'; 
+
+
+const App = () => (
+    //vi vill ha en instant return, så inga curly brackets 
+    <div>
+        <h1>Random GIF application</h1>
+        <div className="main-container">
+            <Random></Random>
+            <Tag></Tag>
+        </div>
     </div>
-  );
-}
+); 
 
-export default App;
+export default App; 

@@ -1,0 +1,84 @@
+$blue: #4E64E3; 
+$beige: #BBa0A8; 
+$lavender: #E5C8F7; 
+$brightp: #9D88E4; 
+$darkp: #3C3A71; 
+
+html {
+  
+    body {
+        font-family: sans-serif;
+        letter-spacing: 0.7px;
+        text-align: center;
+        background-image: linear-gradient($lavender, $beige, $blue, $darkp);
+        height:100vh;
+        h1 {
+            color:$blue;
+            font-size: 46pt;
+        }
+        .main-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgba(245, 245, 245, 0.767);
+                margin:10px;
+                width: 80%;
+             
+                h1 {
+                    text-align: center;
+                    font-size:32pt;
+                    margin: 20px; 
+                    padding:15px; 
+                    width:80%;
+    
+                    text-decoration-color: $lavender; 
+                    text-decoration-line: overline;
+                    text-decoration-style: wavy;
+                }
+                .img-container {
+                    min-width:90%;
+                     max-width: 90%;
+        
+                    img {
+                        max-height:90%;
+                        min-height: 90%;
+                    }
+                }
+                input {
+                    margin-bottom: 20px;
+                    width: 40%;
+                    font-size: large;
+                    opacity: 0.7;
+                    border:none;
+                    padding: 10px;
+    
+                }
+                button {
+                    margin-bottom: 40px;
+                    cursor: pointer;
+                    color:$brightp;
+                    border-radius: 50px;
+                    border-top:none;
+                    border-left:none;
+                    border-bottom:5px solid $brightp;
+                    border-right:5px solid $brightp;
+                    box-shadow: 7px 6px $brightp;
+                    background-color: white;
+                    padding:15px;
+                    width: 50%;
+                    font-weight: bold;
+                    letter-spacing: 0.7px;
+                  }
+            }
+    
+        }
+        
+    }
+    
+}
+
